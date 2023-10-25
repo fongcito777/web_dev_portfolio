@@ -1,0 +1,25 @@
+{
+  "name": "basic_node",
+  "version": "1.0.0",
+  "description": "Currently learning how to use node!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Portfolio"
+  },
+  "keywords": [
+    "basic",
+    "node",
+    "examples"
+  ],
+  "author": "Jorge Fong, Gabriel Castillo",
+  "license": "ISC",
+  "dependencies": {
+    "star-wars-quotes": "^1.0.2",
+    "superheroes": "^3.0.0",
+    "supervillains": "^3.1.0"
+  }
+}
