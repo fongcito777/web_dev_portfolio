@@ -1,0 +1,28 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.schools {
+  color: orangered;
+}
+
+.schools:hover {
+  color: blueviolet;
+}
+
+.header_info .title {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* .destination {
+  background-color: navy;
+  color: white;
+  border-color: red;
+  border-width: icm;
+  border-style: dotted;
+} */
+
+.destination .current{
+  text-align: center;
+}

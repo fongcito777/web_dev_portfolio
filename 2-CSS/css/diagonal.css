@@ -1,0 +1,29 @@
+.one {
+    color: white;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+
+    border: 10px solid black;
+    padding: 20px;
+}
+
+.two {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+
+    border: 20px solid;
+
+    margin-left: 260px;
+}
+
+.three {
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+
+    border: 10px solid;
+
+    margin-left: 500px;
+}

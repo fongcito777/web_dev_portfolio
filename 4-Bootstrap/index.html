@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Pokémon Project</title>
+  <style>
+    body {
+      padding-top: 56px;
+      background-color: #f8f9fa; /* Light mode background color */
+      color: #343a40; /* Light mode text color */
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    body.dark-mode {
+      background-color: #343a40; /* Dark mode background color */
+      color: #f8f9fa; /* Dark mode text color */
+    }
+
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidebar .close-btn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    #main {
+      transition: margin-left 0.5s;
+      padding: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pokémon</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pokédex</a>
+        </li>
+        <li class="nav-item">
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search Pokémon" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </li>
+        <li class="nav-item ml-auto">
+          <button class="btn btn-light" onclick="toggleColorMode()">Toggle Color Mode</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="sidebar">
+    <a href="#" class="close-btn">&#9665; Close</a>
+    <a href="#">Grass Type Pokémon</a>
+    <a href="#">Fire Type Pokémon</a>
+    <a href="#">Water Type Pokémon</a>
+  </div>
+
+  <div id="main">
+    <h2>Welcome to the Pokémon World!</h2>
+    <p>Explore the magical world of Pokémon, where creatures with unique abilities and characteristics roam. Discover Grass, Fire, and Water type Pokémon on your journey.</p>
+    <p>Gotta catch 'em all!</p>
+  </div>
+
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+      <span class="text-muted">© 2023 Pokémon Project</span>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    document.querySelector('.navbar-toggler').addEventListener('click', function () {
+      document.querySelector('.sidebar').style.width = '250px';
+      document.querySelector('#main').style.marginLeft = '250px';
+    });
+
+    document.querySelector('.close-btn').addEventListener('click', function () {
+      document.querySelector('.sidebar').style.width = '0';
+      document.querySelector('#main').style.marginLeft = '0';
+    });
+
+    function toggleColorMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>

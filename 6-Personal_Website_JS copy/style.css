@@ -1,0 +1,72 @@
+html {
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color: black;
+
+  font-family: 'Merriweather', serif;
+
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 5.5rem;
+  margin: 50px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+  color: aquamarine;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+
+  border-bottom: 0;
+  width: 4%;
+
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+}
+
+
+a:hover {
+  color: #00FF00;
+}
+
+.schools {
+  color: orangered;
+}
+
+.schools:hover {
+  color: blueviolet;
+}
+
+.header_info .title {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* .destination {
+  background-color: navy;
+  color: white;
+  border-color: red;
+  border-width: icm;
+  border-style: dotted;
+} */
+
+.destination .current{
+  text-align: center;
+}

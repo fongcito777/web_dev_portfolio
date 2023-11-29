@@ -1,0 +1,36 @@
+<!-- views/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Express API Project</title>
+</head>
+<body>
+  <h1>Welcome!</h1>
+  
+  <form action="/greet" method="get">
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" name="name" required>
+    <button type="submit">Greet</button>
+  </form>
+
+  <h2>Greetings List:</h2>
+  <ul>
+    <% names.forEach(function(name) { %>
+      <li><a href="/wazzup?index=<%= names.indexOf(name) %>"><%= name %></a></li>
+    <% }); %>
+  </ul>
+
+  <h2>TODO List:</h2>
+  <form action="/task" method="post">
+    <label for="task">New Task:</label>
+    <input type="text" id="task" name="task" required>
+    <button type="submit">Add Task</button>
+  </form>
+
+  <ul>
+  </ul>
+</body>
+</html>

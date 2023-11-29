@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body class="body">
+    <div class="header_info">
+        <div class="title">
+            <table border="0">
+                <thead>
+                    <tr>
+                        <th><h1>Jorge Fong</h1></th> <!-- "h{n}" is the tag used for titles. The greater the number, the smaller the font. -->
+                        <th><img src="images/fong_jorge.jpg" alt="fong_jorge" width="20%"/></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <img src="images/LogoUP.png" alt="Logo de la UP" width="50%"/>
+        <!-- "img" is used for images, "src" attribute is the source of the image. "width" and "lenght" attributes can be used to resize an image either with a pixel (px) format or a percentage (%) format. -->
+
+        <p>I am a student at UP Guadalajara.<br>
+            Hello world! My name is Jorge Fong and I'm from <i>guadalajara</i> in <strong> Mexico </strong>. </p>
+    
+        <p>I'm just some handsome, quirky boy. I like and create music, videogames and love fashion.</p>
+
+        <blockquote>"You are born with none of your intelligence, but all of your heart, fully capable of feeling pain and torment, but with no power to understand... All you can do is feel, but never understand. What a sick power it is that you are given." --Baby, FNaF series</blockquote>
+    </div>
+
+    <div class="navbar">
+        <a href="destination.html" alt="Favorite destinations">My favorite destinations</a>
+        <a href="https://www.google.com.mx/" alt="Link to Google" target="_blank">Google</a>
+        <!--<a href="CSS exercises/CSS Box model/css_box_model.html" alt="CSS exercise">CSS exercises</a>-->
+
+        <br/>
+    </div>
+
+    <div class="background">
+        <h2>Background</h2>
+        
+        <hr>I would love to be a well-known mathematician. In the future, I'd love to work programming something about that.</hr>
+        
+        <div class="education">
+            <h3>Education</h3>
+            <table class="schools">
+                <tbody>
+                    <tr>
+                        <ol><td>Kinder <b>Tzitlacalli</b>: <i>2006-2009</i></td></ol>
+                        <td><img src="images/LogoTzit.png" alt="logo_tzitlacalli" width="30%"/><td>
+                    </tr>
+                    <tr>
+                        <td>Undergraduate school in <b>Colegio Altamira</b>: <i>2009-2021</i></td>
+                        <td><img src="images/LogoAltamira.png" alt="logo_altamira" width="30%"/></td>
+                    </tr>
+                    <tr>
+                        <td>College in <b>Universidad Panamericana</b>: <i>2020-present day</i></td>
+                        <td><img src="images/UPNew.jpg" alt="logo_UP_tree" width="30%"/></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>Graduate-level math - 100%</li>
+                <li>Musical analysis - 60%</li>
+                <li>Video game dev - 40%</li>
+                <li>Web dev - 5%</li>
+                <li>Quick learner - 999%</li>
+                
+            </ul>
+        </div>
+
+        <br/>
+    </div>
+
+    <div class="hobbies">
+        <h2>Hobbies</h2>
+
+        <div class="food">
+            <h3>Top 5 cuisines</h3>
+            <ol type="1">
+                <li>Japanese</li>
+                <li>Korean</li>
+                <li>Mexican</li>
+                <li>Italian</li>
+                <li>Chinese</li>
+            </ol>
+
+            <h3>Bottom 3 cuisines</h3>
+            <ol type="1">
+                <li>Australian</li>
+                <li>Scottish</li>
+                <li>Lebanese</li>
+            </ol>
+
+        </div>
+
+        <div class="last">
+            <h3>My last 3...</h3>
+            <ul>
+                <li><span>Movies</span><br/>
+                    <img src="images/PiB-TLW.jpg" alt="puss_in_boots" width="20%"/> <!-- span is used to create a text box -->
+                    <ol type="a">
+                        <li>Howl's Moving Castle</li>
+                        <li>Puss in Boots</li>
+                        <li>Spiderman: Across the Spiderverse</li>
+                        <br/>
+                    </ol>
+                </li>
+                <li> <span>Books</span><br/>
+                    <img src="images/FNaF-TSE.jpg" alt="fnaf_the_silver_eyes" width="20%"/>
+                    <ol type="1">
+                        <li>FNAF series</li>
+                        <li>Discrete Mathematics with Applications</li>
+                        <li>The Five Love Languages</li>
+                        <br/>
+                    </ol>
+                <li><span>TV Shows</span><br/>
+                    <img src="images/the_office.jpg" alt="the_office" width="40%"/>
+                    <ol type="I">
+                        <li>The Office</li>
+                        <li>Community</li>
+                        <li>Atlanta</li>
+                        <br/>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--<div class="table-1">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th colspan="2">Name</th>
+                    <th colspan="2">Birth info.</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">C</th>
+                    <th>Name</th>
+                    <th>Last Name</th>
+                    <th>Birthday</th>
+                    <th>Birth Place</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>-->
+
+    <br/>
+
+    <div class="table-2">
+        <form>
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+        
+            <label for="time-start">Time Start</label>
+            <input type="time" id="time-start" name="time-start" required>
+        
+            <label for="time-end">Time End</label>
+            <input type="time" id="time-end" name="time-end" required>
+        
+            <label for="activity">Activity</label>
+            <input type="text" id="activity" name="activity" required>
+        
+            <label for="place">Place</label>
+            <input type="text" id="place" name="place" required>
+        
+            <label for="type">Type</label>
+            <select id="type" name="type" required>
+              <option value="school">School</option>
+              <option value="personal">Personal</option>
+              <option value="professional">Professional</option>
+              <option value="familiar">Familiar</option>
+              <option value="other">Other</option>
+            </select>
+        
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes"></textarea>
+        
+            <label for="flag">Flag</label>
+            <input type="color" id="flag" name="flag">
+        
+            <label for="free-busy">Free/Busy</label>
+            <input type="checkbox" id="free-busy" name="free-busy">
+        
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="contact">
+        <h2>Contact me</h2>
+        <form action="#" method="post">
+            <table border="1" width="60%">
+                <tbody>
+                    <tr>
+                        <td> <label for="usr_name">Name</label> </td>
+                        <td> <input type="text" name="usr_name"> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="usr_email">Email</label> </td>
+                        <td> <input type="text" name="usr_email"> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea id="msg">Write a message</textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Hit me" /></td>
+                    </tr>
+                </tbody>
+        </form>
+    </div>
+</body>
+
+</html>

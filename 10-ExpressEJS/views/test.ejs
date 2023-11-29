@@ -1,0 +1,11 @@
+<%- include('partials/header') %>
+<body>
+  <h2>Hello, <%= name %>!</h2>
+  <p>Security Level: <%= securityLevel %></p>
+  <form action="/login" method="post">
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" name="name" required>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+<%- include('partials/footer') %>
